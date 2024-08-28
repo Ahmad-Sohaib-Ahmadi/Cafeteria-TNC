@@ -1,0 +1,983 @@
+/* MEDIAQUERIES OF THE CAFETERIA TNC PAGE */
+/* REPTURE POINT 950PX */
+@media screen and (max-width:950px){
+    .nav_principal{
+        display: none;
+    }
+
+    /* ICON THE MENU */
+    .icon_menu{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+    }
+
+    .first_part_icon_menu{
+        width: 25px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    .second_part_icon_menu{
+        width: 18px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    .third_part_icon_menu{
+        width: 10px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    /* NAV THE TABLET AND MOBILE */
+    .nav_mov_tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1001;
+        background-color: #3e1e04;
+        width: 300px;
+        transform: translateX(110%);
+        transition: all 300ms;
+    }
+
+    .nav_mov_tab.visible{
+        transform: translateX(0%);
+    }
+
+    .first_nav_mov_tab{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .first_nav_mov_tab a{
+        color: #fff;
+        font-family: "Fugaz One", sans-serif;
+    }
+
+    .first_nav_mov_tab .submenu{
+        transform: translateX(200%);
+        z-index: 1;
+    }
+
+    .first_nav_mov_tab .has_submenu:hover .submenu{
+        transform: translateX(0%);
+    }
+
+    .first_nav_mov_tab .submenu a{
+        color: #000;
+    }
+
+    .icon_close{
+        position: absolute;
+        right: 20px;
+        top: 40px;
+    }
+
+    .first_part_icon_close{
+        width: 25px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #fff;
+        transform: rotate(120deg);
+    }
+
+    .second_part_icon_close{
+        width: 25px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #fff;
+        transform: rotate(235deg) translate(3px, 2px);
+    }
+
+
+    .title_prin span{
+        font-size: 1.3em;
+    }
+
+    .title_prin h1{
+        font-size: 3em;
+    }
+
+    .gallery_photo_head figure img{
+        height: 255px;
+    }
+
+    .gallery_photo_head figure span{
+        font-size: 1.2em;
+    }
+
+    .story_main_cont h2,
+    .menu_items .anchoMaximo h2,
+    .pop_menu .anchoMaximo h2,
+    .testimo .anchoMaximo h2,
+    .reg_menu .anchoMaximo h2,
+    .image_gallery .anchoMaximo h2,
+    .coffee_today .anchoMaximo h2,
+    .tnc_blog .anchoMaximo h2{
+        font-size: 2.4em;
+    }
+
+    .numbre_exp .numbers{
+        font-size: 2em;
+    }
+
+    .pop_menu_list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section_pop_list{
+        margin-bottom: 1em;
+    }
+
+    .testimo_sections{
+        grid-template-columns: 1fr;
+    }
+
+    .testimo_sections section div img{
+        width: 20px;
+    }
+
+
+    .blog_sections section{
+        flex-direction: column;
+    }
+
+    .blog_sections section figure{
+        flex-basis: 60%;
+    }
+
+    .blog_sections section div{
+        flex-basis: 40%;
+        padding: 2em 1.5em 0.5em;
+    }
+
+
+    .first_part_footer .anchoMaximo{
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 5em 2em;
+    }
+
+    .address_footer h3,
+    .quick_link h3,
+    .open_hours h3,
+    .Newsletter_Subscribe h3{
+        margin-bottom: 1.2em;
+    }
+
+    .copyrights_footer .anchoMaximo p{
+        font-size: 0.9em;
+    }
+
+
+    /* MEDIAQUERIES OF THE ABOUT US PAGE */
+    .cafe_tnc_about{
+        min-height: 600px;
+    }
+
+    .cafe_tnc_about .anchoMaximo p{
+        font-size: 1.2em;
+    }
+
+    .cafe_tnc_about .anchoMaximo h2,
+    .our_chefs_about .anchoMaximo h2,
+    .asked_que_about .anchoMaximo h2{
+        font-size: 2.4em;
+    }
+
+    .our_chefs_sections{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+    }
+
+    .ques_contact_about{
+        flex-direction: column;
+    }
+
+
+    /* MEDIAQUERIES OF THE BLOGS PAGE */
+    .aside_contain_blog .anchoMaximo{
+        flex-direction: column-reverse;
+    }
+
+    .Popular_Post{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .Popular_Post h3{
+        grid-column: 1 / 3;
+        border-bottom: none;
+    }
+
+    .Categories_blog h3,
+    .Tags_blog h3{
+        border-bottom: none;
+    }
+
+
+    /* MEDIAQUERIES OF THE MENU PAGE */
+    .menu_page .anchoMaximo h2{
+        font-size: 2.4em;
+        width: 100%;
+    }
+
+    .sections_menu{
+        grid-template-columns: 1fr;
+    }
+
+    .all_menu h3{
+        font-size: 1.8em;
+    }
+
+    /* MEDIAQUERIES OF THE ERROR 404 PAGE */
+    .page_error{
+        gap: 1em;
+    }
+
+    .page_error .photos_the_error p{
+        font-size: 250px;
+        line-height: 250px;
+    }
+
+    .photos_the_error img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .page_error h1{
+        font-size: 3em;
+    }
+
+    .page_error p{
+        font-size: 1.3em;
+    }
+}
+
+
+/* REPTURE POINT 750PX */
+@media screen and (max-width:750px){
+    .gallery_photo_head{
+        display: none;
+    }
+
+    .title_prin{
+        padding: 7em 2em;
+    }
+
+    .title_prin h1{
+        font-size: 2.5em;
+    }
+
+    .title_prin p{
+        font-size: 1em;
+    }
+
+    .our_story_main .anchoMaximo{
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+
+    .our_story_main{
+        padding: 4em 0 5em;
+    }
+
+    .menu_items .anchoMaximo p,
+    .pop_menu .anchoMaximo p,
+    .testimo .anchoMaximo .para_testimo,
+    .reg_menu .anchoMaximo .para_spi_reg,
+    .image_gallery .anchoMaximo p{
+        width: 80%;
+    }
+
+    .photos_menu_items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section_third_items{
+        flex-direction: row;
+        grid-column: 1 / 3;
+    }
+
+    .pop_menu_list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimo_sections section div .para_gra_testimo{
+        margin: 1em 0;
+    }
+
+    .reg_menu_sections{
+        grid-template-columns: 1fr;
+    }
+
+    .image_gallery_sec{
+        grid-template-columns: 1fr;
+    }
+
+    .second_sec_gall {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto auto auto;
+        gap: 1.5em; 
+    }
+
+
+    .sec_photo {
+        grid-column: 1 / 2; 
+        grid-row: 1; 
+    }
+
+    .thir_photo {
+        grid-column: 2 / 4; 
+        grid-row: 1; 
+    }
+
+
+    .last_fig_gall {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+
+
+    .fou_photo {
+        grid-column: 1 / 2;
+        grid-row: 3; 
+    }
+
+    .fif_photo {
+        grid-column: 2 / 4;
+        grid-row: 3; 
+    }
+
+    .coffee_today{
+        min-height: 500px;
+    }
+
+
+    .blog_sections{
+        grid-template-columns: 1fr;
+    }
+
+    .blog_sections section{
+        flex-direction: row;
+    }
+
+    .blog_sections section figure{
+        flex-basis: 40%;
+    }
+
+    .blog_sections section div{
+        flex-basis: 60%;
+        padding: 2em 1.5em;
+        align-items: center;
+    }
+
+    .first_part_footer .anchoMaximo{
+        grid-template-columns: 2fr 1fr;
+        gap: 4em;
+    }
+
+    .address_footer{
+        order: 1;
+    }
+
+    .quick_link{
+        order: 2;
+    }
+
+    .Newsletter_Subscribe{
+        order: 3;
+    }
+
+    .open_hours{
+        order: 4;
+    }
+
+    .address_footer h3, .quick_link h3, .open_hours h3, .Newsletter_Subscribe h3{
+        font-size: 1.3em;
+    }
+
+    .reg_menu_sections section{
+        padding: 1.5em;
+    }
+
+    .address_footer ul li,
+    .open_hours p,
+    .quick_link ul a,
+    .Newsletter_Subscribe p{
+        font-size: 1em;
+    }
+
+    .open_hours .para_tit_open{
+        font-size: 1.1em;
+    }
+
+    .reg_menu_list ul li{
+        font-size: 1.2em;
+    }
+
+
+    /* MEDIAQUERIES OF THE ABOUT US PAGE */
+    .title_prin .title_personal{
+        font-size: 2.5em;
+    }
+
+    .our_chefs_about .anchoMaximo .para_chefs,
+    .asked_que_about .anchoMaximo .para_asked{
+        width: 80%;
+    }
+
+    .our_chefs_sections{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* MEDIAQUERIES OF THE CONTACT US PAGE */
+    .address_contact .anchoMaximo{
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .address_last h2, .contact_last h2{
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .address_contact{
+        padding: 3em 0 5em;
+    }
+
+    /* MEDIAQUERIES OF THE RESERVATION PAGE */
+    .address_contact .anchoMaximo .address_last_res,
+    .address_contact .anchoMaximo .contact_last_res{
+        width: 100%;
+    }
+
+    .address_last_res h2, 
+    .contact_last_res h2{
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+
+    /* MEDIAQUERIES OF THE BLOGS PAGE */
+    .Popular_Post{
+        grid-template-columns: 1fr;
+    }
+
+    .Popular_Post h3{
+        grid-column: 1 / 2;
+    }
+
+    .Tags_blog ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* MEDIAQUERIES OF THE MENU PAGE */
+    .all_menu{
+        padding: 0;
+        border: none;
+    }
+
+    .fathe_all_menu{
+        gap: 4em;
+    }
+
+    .all_menu h3{
+        text-align: center;
+    }
+
+
+    /* MEDIAQUERIES OF THE COFFEE MENU PAGE */
+    .pop_menu_coffee{
+        padding: 5em 0 2em !important;
+    }
+
+    /* MEDIAQUERIES OF THE ERROR 404 PAGE */
+    .page_error .photos_the_error p{
+        font-size: 200px;
+        line-height: 200px;
+    }
+
+    .photos_the_error img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .page_error h1{
+        font-size: 2.5em;
+    }
+
+    .page_error p{
+        font-size: 1.2em;
+    }
+}
+
+/* REPTURE POINT 500PX */
+@media screen and (max-width:500px){
+    .Logo{
+        width: 160px;
+    }
+
+    .first_part_icon_menu,
+    .second_part_icon_menu,
+    .third_part_icon_menu{
+        height: 4px;
+    }
+
+    .first_part_icon_close{
+        width: 25px;
+        height: 4px;
+    }
+
+    .second_part_icon_close{
+        width: 25px;
+        height: 4px;
+        transform: rotate(235deg) translate(3px, 2px);
+    }
+
+    .title_prin{
+        padding: 5em 2em;
+    }
+
+    .title_prin span{
+        font-size: 1.2em;
+    }
+
+    .title_prin h1{
+        font-size: 2.2em;
+    }
+
+    .title_prin p{
+        margin: 0 auto 1.5em;
+        width: 100%;
+    }
+
+    .our_story_main .anchoMaximo{
+        gap: 1em;
+    }
+
+    .our_story_main{
+        padding: 2em 0;
+    }
+
+    .story_main_cont h2,
+    .menu_items .anchoMaximo h2,
+    .pop_menu .anchoMaximo h2,
+    .testimo .anchoMaximo h2, 
+    .reg_menu .anchoMaximo h2, 
+    .image_gallery .anchoMaximo h2, 
+    .coffee_today .anchoMaximo h2,
+    .tnc_blog .anchoMaximo h2{
+        font-size: 1.8em;
+    }
+
+    .numbre_exp .numbers{
+        font-size: 1.4em;
+    }
+
+    .numbre_exp span{
+        font-size: 1em;
+    }
+
+    .story_main_cont p{
+        margin: 1em 0;
+    }
+
+    .menu_items .anchoMaximo p,
+    .pop_menu .anchoMaximo p,
+    .testimo .anchoMaximo .para_testimo,
+    .reg_menu .anchoMaximo .para_spi_reg,
+    .image_gallery .anchoMaximo p,
+    .coffee_today .anchoMaximo p,
+    .tnc_blog .anchoMaximo .para_tnc_blog{
+        width: 100%;
+        margin: 1em 0;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .section_first_items figure span,
+    .section_second_items span,
+    .section_third_items figure span{
+        font-size: 1.1em;
+    }
+
+    .photos_menu_items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_third_items{
+        flex-direction: column;
+    }
+
+    .pop_menu{
+        padding: 2em 0;
+    }
+
+    .pop_menu_list{
+        grid-template-columns: 1fr;
+    }
+
+    .section_pop_list{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .section_pop_list img{
+        flex-basis: 60%;
+    }
+
+    .pop_menu_list .section_pop_list div{
+        flex-basis: 40%;
+    }
+
+    .testimo,
+    .reg_menu,
+    .image_gallery,
+    .tnc_blog{
+        padding: 3em 0;
+    }
+
+    .testimo_sections section{
+        padding: 1.5em;
+    }
+
+    .testimo_sections section div img{
+        display: none;
+    }
+
+    .reg_menu_list{
+        margin: 2em 0;
+    }
+
+    .reg_menu_list ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    .reg_menu_list ul li{
+        font-size: 1.1em;
+    }
+
+    .reg_menu_list ul li.li_spi{
+        border-bottom: none;
+        border-bottom: 0;
+    }
+
+    .reg_menu_sections section .div_spi,
+    .reg_menu_sections section{
+        gap: 1em;
+    }
+
+    .reg_menu_sections section{
+        padding: 1em;
+    }
+
+    .div_spi div .para_reg_menu,
+    .pri_reg_menu{
+        font-size: 1.1em;
+    }
+
+    .image_gallery_sec,
+    .second_sec_gall{
+        gap: 1em;
+    }
+
+    .coffee_today{
+        min-height: 450px;
+    }
+
+    .story_main_cont a,
+    .coffee_today .anchoMaximo a{
+        padding: 0.8em 2em;
+    }
+
+    .blog_sections{
+        margin-top: 2em;
+    }
+
+    .blog_sections section{
+        flex-direction: column;
+    }
+
+    .blog_sections section figure{
+        flex-basis: 60%;
+    }
+
+    .blog_sections section div{
+        flex-basis: 40%;
+        padding: 1em;
+    }
+
+    .first_part_footer{
+        padding: 3em 0;
+    }
+
+    .first_part_footer .anchoMaximo{
+        grid-template-columns: 1fr;
+    }
+
+    .open_hours{
+        order: 3;
+    }
+
+    .Newsletter_Subscribe{
+        order: 4;
+    }
+
+    .copyrights_footer{
+        padding: 1.5em 0;
+    }
+
+    .quick_link ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .address_footer h3, 
+    .quick_link h3, 
+    .open_hours h3, 
+    .Newsletter_Subscribe h3{
+        margin-bottom: 0.8em;
+    }
+
+    .address_footer ul{
+        gap: 1em;
+    }
+
+
+    /* MEDIAQUERIES OF THE ABOUT US PAGE */
+    .title_prin .title_personal{
+        font-size: 2.2em;
+    }
+
+    .cafe_tnc_about{
+        min-height: 520px;
+    }
+
+    .cafe_tnc_about .anchoMaximo h2, 
+    .our_chefs_about .anchoMaximo h2, 
+    .asked_que_about .anchoMaximo h2{
+        font-size: 1.8em;
+    }
+
+    .cafe_tnc_about .anchoMaximo p{
+        font-size: 1.1em;
+    }
+
+    .our_chefs_about .anchoMaximo .para_chefs, 
+    .asked_que_about .anchoMaximo .para_asked{
+        width: 100%;
+        margin: 1em 0;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .asked_que_about .anchoMaximo .para_asked{
+        text-align: center;
+    }
+
+    .our_chefs_about,
+    .asked_que_about{
+        padding: 3em 0;
+    }
+
+    .our_chefs_sections{
+        grid-template-columns: 1fr;
+    }
+
+    .our_chefs_sections section .para_name{
+        margin: 0.8em 0 0.5em;
+    }
+
+    .bor_pad_ques{
+        padding: 0.3em 1em;
+    }
+
+    .question_tit{
+        font-size: 1.1em;
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5em;
+    }
+
+    .contact_About img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact_About h3{
+        font-size: 1.5em;
+    }
+
+    .contact_About p{
+        font-size: 1em;
+    }
+
+    .contact_About a{
+        padding: 0.8em 2em;
+    }
+
+    /* MEDIAQUERIES OF THE CONTACT US PAGE */
+    .address_contact{
+        padding: 3em 0;
+    }
+
+    .address_last ul{
+        gap: 1em;
+    }
+
+    .address_last ul li{
+        font-size: 1em;
+    }
+
+    .address_contact ul li span{
+        font-size: 1.3em;
+    }
+
+    .father_input{
+        flex-direction: column;
+    }
+
+    .father_input .input_name, 
+    .father_input .input_email_last{
+        width: 100%;
+    }
+
+    /* MEDIAQUERIES OF THE RESERVATION PAGE */
+    .img_reservation{
+        padding: 3em 0;
+    }
+
+    .father_input .input_full_name_res, 
+    .father_input .input_email_last_res, 
+    .father_input .input_phone_res, 
+    .father_input .input_person_res, 
+    .father_input .input_date_res, 
+    .father_input .input_time_res{
+        width: 100%;
+    }
+
+    /* MEDIAQUERIES OF THE BLOGS PAGE */
+    .contain_blog{
+        gap: 2em;
+    }
+
+    .first_the_blog h2{
+        font-size: 1.8em;
+    }
+
+    .Popular_Post h3{
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .posts_photo_contain{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .posts_photo_contain figure a{
+        max-width: 180px;
+        min-width: 180px;
+    }
+
+    .Popular_Post{
+        justify-items: center;
+    }
+    
+
+    .posts_photo_contain figure{
+        flex-basis: 100%;
+    }
+
+    .posts_photo_contain div{
+        flex-basis: 30%;
+    }
+
+    .Categories_blog ul{
+        gap: 1em;
+    }
+
+    .Categories_blog ul li a{
+        font-size: 1em;
+    }
+
+    .Tags_blog ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* MEDIAQUERIES OF THE MENU PAGE */
+    .menu_page{
+        padding: 3em 0;
+    }
+
+    .menu_page .anchoMaximo h2{
+        font-size: 1.8em;
+    }
+
+    .all_menu h3{
+        font-size: 1.4em;
+    }
+
+    .all_menu .contain_menu{
+        padding: 1em;
+    }
+
+    .val_menu p,
+    .tit_menu .para_tit_menu{
+        font-size: 1.1em;
+    }
+
+    /* MEDIAQUERIES OF THE COFFEE MENU PAGE */
+    .pop_menu_coffee{
+        padding: 2em 0 2em !important;
+    }
+
+    /* MEDIAQUERIES OF THE ERROR 404 PAGE */
+    .page_error .photos_the_error p{
+        font-size: 8em;
+        line-height: 1em;
+    }
+
+    .photos_the_error img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .page_error h1{
+        font-size: 2em;
+    }
+
+    .page_error p{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    /* MEDIAQUERIES FOR EMAIL SUBSCRIBE */
+    .send_email_subscribe h1{
+        font-size: 2em;
+    }
+}
